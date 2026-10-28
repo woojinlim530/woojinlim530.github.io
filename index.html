@@ -3,11 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Woojin | Portfolio</title>
+  <title>Woojin Lim | Machine Learning Engineer & Data Analyst</title>
+  
+  <!-- SEO & North American Social Cards (LinkedIn, Slack, X) -->
+  <meta name="description" content="Portfolio of Woojin Lim - Machine Learning Engineer & Data Analyst based in Greater Vancouver, BC. Specializing in PyTorch architectures, spatial network analytics, and C++ SIMD acceleration." />
+  <meta name="author" content="Woojin Lim" />
+  <link rel="canonical" href="https://woojinlim530.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://woojinlim530.github.io/" />
+  <meta property="og:title" content="Woojin Lim | Machine Learning Engineer & Data Analyst" />
+  <meta property="og:description" content="Cognitive Science & Computer Science at SFU. Machine learning pipelines, graph-based spatial algorithms, and systems performance." />
+  <meta property="og:site_name" content="Woojin Lim Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Woojin Lim | Machine Learning Engineer & Data Analyst" />
+  <meta name="twitter:description" content="ML systems, spatial network analysis, and C++ high-performance computing portfolio." />
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <script>
     tailwind.config = {
       theme: {
@@ -23,17 +42,21 @@
     }
   </script>
 </head>
-<body class="bg-surface text-slate-100 font-sans antialiased selection:bg-brand selection:text-slate-900">
+<body class="bg-surface text-slate-100 font-sans antialiased selection:bg-brand selection:text-slate-900 min-h-screen">
 
   <!-- Navigation -->
-  <nav class="sticky top-0 z-50 backdrop-blur-md bg-surface/80 border-b border-border">
+  <nav class="sticky top-0 z-40 backdrop-blur-md bg-surface/80 border-b border-border">
     <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="font-mono text-lg font-bold text-brand">&lt;Woojin /&gt;</a>
-      <div class="space-x-6 text-sm font-medium text-slate-400">
-        <a href="#about" class="hover:text-brand transition">About</a>
-        <a href="#skills" class="hover:text-brand transition">Skills</a>
+      <a href="#" class="font-mono text-lg font-bold text-brand">&lt;WoojinLim /&gt;</a>
+      <div class="flex items-center space-x-6 text-sm font-medium text-slate-400">
+        <a href="#about" class="hover:text-brand transition hidden sm:inline">About</a>
+        <a href="#education" class="hover:text-brand transition hidden sm:inline">Education</a>
+        <a href="#skills" class="hover:text-brand transition hidden sm:inline">Skills</a>
         <a href="#projects" class="hover:text-brand transition">Projects</a>
-        <a href="#contact" class="hover:text-brand transition">Contact</a>
+        <a href="#contact" class="hover:text-brand transition hidden sm:inline">Contact</a>
+        <a href="./resume.pdf" target="_blank" class="px-3 py-1.5 rounded border border-brand text-brand hover:bg-brand hover:text-slate-900 transition text-xs font-mono font-semibold flex items-center gap-1.5">
+          <i class="fas fa-file-pdf"></i> Resume
+        </a>
       </div>
     </div>
   </nav>
@@ -42,19 +65,25 @@
 
     <!-- Hero Section -->
     <section id="hero" class="space-y-4 pt-8">
-      <p class="font-mono text-brand text-sm tracking-wide">Hi, my name is</p>
+      <div class="flex items-center gap-2 font-mono text-xs text-brand tracking-wide uppercase">
+        <i class="fas fa-location-dot"></i>
+        <span>Greater Vancouver, BC, Canada</span>
+      </div>
       <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
-        Woojin.
+        Woojin Lim.
       </h1>
       <h2 class="text-2xl sm:text-3xl font-semibold text-slate-400">
-        Building intelligent systems, data pipelines & robust software.
+        Machine Learning Engineer & Data Analyst
       </h2>
       <p class="text-slate-400 max-w-xl leading-relaxed pt-2">
-        Software developer with a strong focus on machine learning, data engineering, and low-level backend systems. Passionate about translating complex theoretical concepts into clean, production-grade applications.
+        Cognitive Science & Computer Science at Simon Fraser University. Engineering end-to-end machine learning workflows, large-scale geospatial analytics, and hardware-accelerated algorithms.
       </p>
-      <div class="pt-4 flex gap-4">
+      <div class="pt-4 flex flex-wrap gap-4">
         <a href="#projects" class="px-5 py-2.5 rounded-lg bg-brand text-slate-900 font-semibold hover:bg-sky-400 transition">View Projects</a>
-        <a href="https://github.com/<your-username>" target="_blank" class="px-5 py-2.5 rounded-lg border border-border text-slate-300 hover:border-slate-400 hover:text-white transition flex items-center gap-2">
+        <a href="./resume.pdf" target="_blank" class="px-5 py-2.5 rounded-lg border border-border text-slate-200 hover:border-brand hover:text-white transition flex items-center gap-2">
+          <i class="fas fa-arrow-down"></i> Resume
+        </a>
+        <a href="https://github.com/woojinlim530" target="_blank" class="px-5 py-2.5 rounded-lg border border-border text-slate-300 hover:border-slate-400 hover:text-white transition flex items-center gap-2">
           <i class="fab fa-github"></i> GitHub
         </a>
       </div>
@@ -68,10 +97,28 @@
       </div>
       <div class="text-slate-300 space-y-4 leading-relaxed">
         <p>
-          I specialize in building end-to-end systems across the <strong>Python</strong> and <strong>TypeScript</strong> ecosystems—ranging from distributed data pipelines and natural language processing models to resilient network architectures and mobile frontends.
+          I operate across <strong>Machine Learning Engineering</strong> and <strong>Data Analytics</strong>, bridging formal computational theory with practical, high-throughput systems. My work primarily leverages <strong>Python</strong>, <strong>C++</strong>, and <strong>SQL</strong>.
         </p>
         <p>
-          My work is guided by system efficiency, memory optimization, and data integrity. Whether working with low-level socket programming or high-level distributed data engines, I enjoy tackling complex architectural constraints.
+          With an interdisciplinary background spanning natural and formal computational models, I specialize in training and evaluating Transformer architectures, extracting actionable insights from multi-modal spatial networks, and exploiting CPU cache lines and SIMD registers to maximize computational efficiency.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="space-y-6">
+      <div class="flex items-center gap-4">
+        <h3 class="text-xl font-bold text-white">Education</h3>
+        <div class="h-[1px] flex-grow bg-border"></div>
+      </div>
+      <div class="p-6 rounded-xl bg-card border border-border space-y-2">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+          <h4 class="text-lg font-bold text-white">Simon Fraser University (SFU)</h4>
+          <span class="text-xs font-mono text-slate-400">Burnaby, BC, Canada</span>
+        </div>
+        <p class="text-brand font-medium text-sm">Bachelor of Arts (BA) in Cognitive Science · Minor in Computing Science</p>
+        <p class="text-sm text-slate-400 leading-relaxed pt-1">
+          Relevant Coursework: Computational Linguistics, Data Structures & Algorithms, Operating Systems, Database Systems, Statistical Data Modeling, and Formal Language Theory.
         </p>
       </div>
     </section>
@@ -84,134 +131,42 @@
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
-          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Languages & Core</h4>
-          <p class="text-sm text-slate-300">Python, C/C++, TypeScript, JavaScript, SQL, Bash</p>
+          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Languages</h4>
+          <p class="text-sm text-slate-300">Python, C++, SQL (PostgreSQL, MySQL), TypeScript, JavaScript, Bash</p>
         </div>
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
-          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Data & ML</h4>
-          <p class="text-sm text-slate-300">PyTorch, PySpark, Scikit-learn, Pandas, Hugging Face, SciPy</p>
+          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">ML & Analytics</h4>
+          <p class="text-sm text-slate-300">PyTorch, Transformers, Scikit-learn, Pandas, NumPy, GeoPandas, PySpark</p>
         </div>
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
-          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Frameworks & Tools</h4>
-          <p class="text-sm text-slate-300">Node.js, Express, React Native, Docker, Git, Linux, Wireshark</p>
+          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Systems & Frameworks</h4>
+          <p class="text-sm text-slate-300">SIMD Vectorization, Network Sockets, WebSockets, Node.js, Git, Linux</p>
         </div>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="space-y-6">
-      <div class="flex items-center gap-4">
-        <h3 class="text-xl font-bold text-white">Featured Projects</h3>
-        <div class="h-[1px] flex-grow bg-border"></div>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4 flex-grow mr-4">
+          <h3 class="text-xl font-bold text-white">Featured Projects</h3>
+          <div class="h-[1px] flex-grow bg-border"></div>
+        </div>
+        <span class="text-xs font-mono text-slate-400 hidden sm:inline">Click card for technical deep-dive</span>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Project 1 -->
-        <div class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-slate-500 transition duration-200">
+
+        <!-- Project 1: GPT-2 -->
+        <div onclick="openModal('gpt2')" class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-brand/70 hover:-translate-y-1 transition duration-200 cursor-pointer group">
           <div>
             <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">ML / NLP</span>
-              <div class="flex gap-3 text-slate-400">
-                <a href="#" class="hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-                <a href="#" class="hover:text-white" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
-              </div>
+              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">Machine Learning / NLP</span>
+              <a href="https://github.com/woojinlim530/GPT2" target="_blank" onclick="event.stopPropagation()" class="text-slate-400 hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github text-base"></i></a>
             </div>
-            <h4 class="text-lg font-bold text-white mb-2">Transformer Analysis & NLP Pipeline</h4>
+            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand transition">GPT-2 Architecture & Generative Pipeline</h4>
             <p class="text-sm text-slate-300 leading-relaxed mb-4">
-              Evaluated next-token prediction mechanics and hallucination mitigation strategies across Transformer architectures, benchmarked against baseline N-gram statistical models.
+              Ground-up PyTorch reproduction of OpenAI's decoder-only Transformer. Implements multi-head causal self-attention, learned positional encodings, and autoregressive generation loops.
             </p>
           </div>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
-            <span>PyTorch</span> · <span>Transformers</span> · <span>Python</span>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-slate-500 transition duration-200">
-          <div>
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">Big Data / Spatial</span>
-              <div class="flex gap-3 text-slate-400">
-                <a href="#" class="hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-                <a href="#" class="hover:text-white" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-            <h4 class="text-lg font-bold text-white mb-2">Multi-Objective Spatial Routing</h4>
-            <p class="text-sm text-slate-300 leading-relaxed mb-4">
-              Integrated municipal geographic datasets and transit GTFS feeds into graph structures using OSMnx and NetworkX to compute dynamic multi-criteria routing algorithms.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
-            <span>GeoPandas</span> · <span>NetworkX</span> · <span>Folium</span>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-slate-500 transition duration-200">
-          <div>
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">Mobile / Fullstack</span>
-              <div class="flex gap-3 text-slate-400">
-                <a href="#" class="hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-                <a href="#" class="hover:text-white" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-            <h4 class="text-lg font-bold text-white mb-2">Cross-Platform Application & API</h4>
-            <p class="text-sm text-slate-300 leading-relaxed mb-4">
-              Architected a mobile client with local offline storage synchronization connected to a modular Node.js/Express backend service and relational database.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
-            <span>React Native</span> · <span>Node.js</span> · <span>SQL</span>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-slate-500 transition duration-200">
-          <div>
-            <div class="flex justify-between items-center mb-3">
-              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">Systems / Network</span>
-              <div class="flex gap-3 text-slate-400">
-                <a href="#" class="hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
-                <a href="#" class="hover:text-white" aria-label="Live Demo"><i class="fas fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-            <h4 class="text-lg font-bold text-white mb-2">Custom HTTP Server & Proxy</h4>
-            <p class="text-sm text-slate-300 leading-relaxed mb-4">
-              Implemented a low-level socket proxy client handling protocol frame parsing, response caching, persistent connections, and status code resolution.
-            </p>
-          </div>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
-            <span>Python Sockets</span> · <span>TCP/IP</span> · <span>Wireshark</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="space-y-6 pt-4">
-      <div class="flex items-center gap-4">
-        <h3 class="text-xl font-bold text-white">Get In Touch</h3>
-        <div class="h-[1px] flex-grow bg-border"></div>
-      </div>
-      <p class="text-slate-300 leading-relaxed max-w-xl">
-        I am always open to discussing new opportunities, technical collaborations, or engineering projects. Feel free to reach out via email or LinkedIn.
-      </p>
-      <div class="flex flex-wrap gap-4 pt-2">
-        <a href="mailto:your.email@example.com" class="px-5 py-2.5 rounded-lg bg-card border border-border hover:border-brand text-slate-200 hover:text-white transition flex items-center gap-2">
-          <i class="fas fa-envelope text-brand"></i> your.email@example.com
-        </a>
-        <a href="https://linkedin.com/in/<your-profile>" target="_blank" class="px-5 py-2.5 rounded-lg bg-card border border-border hover:border-brand text-slate-200 hover:text-white transition flex items-center gap-2">
-          <i class="fab fa-linkedin text-brand"></i> LinkedIn
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="border-t border-border py-8 text-center text-xs text-slate-500 font-mono">
-    Designed & Built with GitHub Pages · © 2026 Woojin
-  </footer>
-
-</body>
-</html>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-4
