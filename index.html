@@ -5,22 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Woojin Lim | Machine Learning Engineer & Data Analyst</title>
   
-  <!-- SEO & North American Social Cards (LinkedIn, Slack, X) -->
-  <meta name="description" content="Portfolio of Woojin Lim - Machine Learning Engineer & Data Analyst based in Greater Vancouver, BC. Specializing in PyTorch architectures, spatial network analytics, and C++ SIMD acceleration." />
+  <meta name="description" content="Portfolio of Woojin Lim - Machine Learning Engineer & Data Analyst based in Greater Vancouver, BC." />
   <meta name="author" content="Woojin Lim" />
   <link rel="canonical" href="https://woojinlim530.github.io/" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://woojinlim530.github.io/" />
-  <meta property="og:title" content="Woojin Lim | Machine Learning Engineer & Data Analyst" />
-  <meta property="og:description" content="Cognitive Science & Computer Science at SFU. Machine learning pipelines, graph-based spatial algorithms, and systems performance." />
-  <meta property="og:site_name" content="Woojin Lim Portfolio" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Woojin Lim | Machine Learning Engineer & Data Analyst" />
-  <meta name="twitter:description" content="ML systems, spatial network analysis, and C++ high-performance computing portfolio." />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -100,7 +87,7 @@
           I operate across <strong>Machine Learning Engineering</strong> and <strong>Data Analytics</strong>, bridging formal computational theory with practical, high-throughput systems. My work primarily leverages <strong>Python</strong>, <strong>C++</strong>, and <strong>SQL</strong>.
         </p>
         <p>
-          With an interdisciplinary background spanning natural and formal computational models, I specialize in training and evaluating Transformer architectures, extracting actionable insights from multi-modal spatial networks, and exploiting CPU cache lines and SIMD registers to maximize computational efficiency.
+          With an interdisciplinary background spanning natural and formal computational models, I specialize in training Transformer architectures, extracting actionable insights from multi-modal spatial networks, and exploiting CPU cache lines and SIMD registers to maximize computational efficiency.
         </p>
       </div>
     </section>
@@ -132,14 +119,14 @@
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
           <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Languages</h4>
-          <p class="text-sm text-slate-300">Python, C++, SQL (PostgreSQL, MySQL), TypeScript, JavaScript, Bash</p>
+          <p class="text-sm text-slate-300">Python, C++, SQL (PostgreSQL, MySQL), Bash</p>
         </div>
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
           <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">ML & Analytics</h4>
           <p class="text-sm text-slate-300">PyTorch, Transformers, Scikit-learn, Pandas, NumPy, GeoPandas, PySpark</p>
         </div>
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
-          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Systems & Frameworks</h4>
+          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Systems & Tools</h4>
           <p class="text-sm text-slate-300">SIMD Vectorization, Network Sockets, WebSockets, Node.js, Git, Linux</p>
         </div>
       </div>
@@ -169,4 +156,252 @@
               Ground-up PyTorch reproduction of OpenAI's decoder-only Transformer. Implements multi-head causal self-attention, learned positional encodings, and autoregressive generation loops.
             </p>
           </div>
-          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-4
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+            <span>PyTorch</span> · <span>Transformers</span> · <span>NLP</span>
+          </div>
+        </div>
+
+        <!-- Project 2: SIMD vs Non-SIMD -->
+        <div onclick="openModal('simd')" class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-brand/70 hover:-translate-y-1 transition duration-200 cursor-pointer group">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">High-Performance Computing</span>
+              <a href="https://github.com/woojinlim530/DFS-BFS_SIMDvsNON" target="_blank" onclick="event.stopPropagation()" class="text-slate-400 hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github text-base"></i></a>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand transition">DFS & BFS: SIMD vs Non-SIMD Benchmark</h4>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Performance analysis and algorithmic benchmarking of graph search algorithms in C++. Evaluates data-level parallelism via vector intrinsics against scalar execution.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+            <span>C++</span> · <span>SIMD Intrinsics</span> · <span>Benchmarking</span>
+          </div>
+        </div>
+
+        <!-- Project 3: SafePath Navigator -->
+        <div onclick="openModal('safepath')" class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-brand/70 hover:-translate-y-1 transition duration-200 cursor-pointer group">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">Spatial Analytics / Routing</span>
+              <a href="https://github.com/woojinlim530/SafePath-Transit-Crime-Minimized-first-and-last-mile-navigator-" target="_blank" onclick="event.stopPropagation()" class="text-slate-400 hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github text-base"></i></a>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand transition">SafePath: Crime-Minimized First/Last-Mile Navigator</h4>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Multi-criteria spatial graph routing model joining municipal crime incident data and TransLink GTFS transit feeds to calculate safer pedestrian path topologies.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+            <span>GeoPandas</span> · <span>NetworkX</span> · <span>OSMnx</span>
+          </div>
+        </div>
+
+        <!-- Project 4: WebSocket Design -->
+        <div onclick="openModal('websocket')" class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-brand/70 hover:-translate-y-1 transition duration-200 cursor-pointer group">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">Network Protocols</span>
+              <a href="https://github.com/woojinlim530/Websocket_Design" target="_blank" onclick="event.stopPropagation()" class="text-slate-400 hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github text-base"></i></a>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand transition">Custom WebSocket Protocol Engine</h4>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              RFC 6455 compliant WebSocket server implementation over raw TCP sockets. Handles HTTP upgrade handshakes, XOR payload unmasking, and bitwise framing protocols.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+            <span>Socket Programming</span> · <span>RFC 6455</span> · <span>Networking</span>
+          </div>
+        </div>
+
+        <!-- Project 5: 354 Delivery App -->
+        <div onclick="openModal('delivery')" class="p-6 rounded-xl bg-card border border-border flex flex-col justify-between hover:border-brand/70 hover:-translate-y-1 transition duration-200 cursor-pointer group md:col-span-2">
+          <div>
+            <div class="flex justify-between items-center mb-3">
+              <span class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">Database & Backend Systems</span>
+              <a href="https://github.com/woojinlim530/354DeliveryApp" target="_blank" onclick="event.stopPropagation()" class="text-slate-400 hover:text-white" aria-label="GitHub Repository"><i class="fab fa-github text-base"></i></a>
+            </div>
+            <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand transition">354 Delivery Platform & Relational DB</h4>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+              Full-stack delivery management engine built around a 3NF normalized relational schema. Enforces strict ACID transactions, indexing strategies, and reliable state transitions across order lifecycles.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+            <span>SQL</span> · <span>Node.js</span> · <span>Express</span> · <span>Schema Architecture</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="space-y-6 pt-4">
+      <div class="flex items-center gap-4">
+        <h3 class="text-xl font-bold text-white">Get In Touch</h3>
+        <div class="h-[1px] flex-grow bg-border"></div>
+      </div>
+      <p class="text-slate-300 leading-relaxed max-w-xl">
+        I am currently open to Machine Learning Engineer and Data Analyst roles across Canada and remote North American teams. Feel free to reach out via email or connect on LinkedIn.
+      </p>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <a href="mailto:woojinlim530@gmail.com" class="px-5 py-2.5 rounded-lg bg-card border border-border hover:border-brand text-slate-200 hover:text-white transition flex items-center gap-2">
+          <i class="fas fa-envelope text-brand"></i> woojinlim530@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/woojin-lim-901a6b39b/" target="_blank" class="px-5 py-2.5 rounded-lg bg-card border border-border hover:border-brand text-slate-200 hover:text-white transition flex items-center gap-2">
+          <i class="fab fa-linkedin text-brand"></i> LinkedIn
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal Component -->
+  <div id="project-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm hidden" onclick="closeModalOnBackdrop(event)">
+    <div class="bg-card border border-border rounded-2xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 space-y-6 shadow-2xl relative" onclick="event.stopPropagation()">
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl p-2" aria-label="Close modal">
+        <i class="fas fa-times"></i>
+      </button>
+
+      <div>
+        <span id="modal-tag" class="text-xs font-mono text-brand bg-sky-950/60 px-2.5 py-1 rounded border border-sky-800">Tag</span>
+        <h3 id="modal-title" class="text-2xl font-bold text-white mt-2">Project Title</h3>
+      </div>
+
+      <div class="space-y-4 text-sm leading-relaxed text-slate-300">
+        <div>
+          <h5 class="font-semibold text-white uppercase text-xs tracking-wider text-brand mb-1">Architecture & Overview</h5>
+          <p id="modal-desc">Description</p>
+        </div>
+
+        <div>
+          <h5 class="font-semibold text-white uppercase text-xs tracking-wider text-brand mb-1">Engineering Highlights</h5>
+          <ul id="modal-highlights" class="list-disc list-inside space-y-1.5 text-slate-300">
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="font-semibold text-white uppercase text-xs tracking-wider text-brand mb-1">Stack & Methodologies</h5>
+          <p id="modal-stack" class="font-mono text-xs text-slate-400"></p>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-border flex justify-end">
+        <a id="modal-github" href="#" target="_blank" class="px-4 py-2 rounded-lg bg-brand text-slate-900 font-semibold text-sm hover:bg-sky-400 transition flex items-center gap-2">
+          <i class="fab fa-github"></i> View GitHub Repository
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="border-t border-border py-8 text-center text-xs text-slate-500 font-mono">
+    Designed & Built with GitHub Pages · © 2026 Woojin Lim · Greater Vancouver, BC
+  </footer>
+
+  <!-- Modal Script -->
+  <script>
+    const projectData = {
+      gpt2: {
+        tag: "Machine Learning / NLP",
+        title: "GPT-2 Architecture & Generative Pipeline",
+        github: "https://github.com/woojinlim530/GPT2",
+        desc: "A modular, from-scratch PyTorch implementation of the GPT-2 decoder-only Transformer. Designed to study internal representation dynamics, token prediction mechanics, and attention weight behavior without framework abstractions.",
+        highlights: [
+          "Constructed causal self-attention mechanisms with triangular lower-bound masking to guarantee strict autoregressive token visibility.",
+          "Implemented learned 1D positional embeddings, Pre-LayerNorm residual blocks, and gaussian error linear unit (GELU) activations.",
+          "Engineered text generation loops incorporating temperature modulation, top-k sampling, and top-p (nucleus) thresholding.",
+          "Built a vectorized training loop computing shifted cross-entropy loss against next-token target targets."
+        ],
+        stack: "Python, PyTorch, Hugging Face Tokenizers, NumPy"
+      },
+      simd: {
+        tag: "High-Performance Computing",
+        title: "DFS & BFS: SIMD vs Non-SIMD Benchmark",
+        github: "https://github.com/woojinlim530/DFS-BFS_SIMDvsNON",
+        desc: "An empirical benchmarking suite evaluating data-level parallelism via SIMD vector intrinsics against scalar execution for Depth-First and Breadth-First graph search routines in C++.",
+        highlights: [
+          "Leveraged vector intrinsics to unpack adjacency lists and evaluate visited-node bitmasks simultaneously across 128/256-bit registers.",
+          "Mitigated branch mispredictions and evaluated L1/L2 cache locality across dense and sparse graph benchmarks.",
+          "Demonstrated measurable throughput gains and memory bandwidth saturation over standard container-based traversal.",
+          "Profiled hardware execution counters, instruction pipelines, and cache misses across synthetic graph datasets."
+        ],
+        stack: "C++, SIMD Intrinsics, Google Benchmark, Valgrind/Cachegrind, Linux"
+      },
+      safepath: {
+        tag: "Spatial Analytics / Routing",
+        title: "SafePath: First/Last-Mile Crime Minimized Navigator",
+        github: "https://github.com/woojinlim530/SafePath-Transit-Crime-Minimized-first-and-last-mile-navigator-",
+        desc: "A multi-criteria spatial navigation model analyzing pedestrian routing trade-offs between physical distance and empirical safety metrics using Metro Vancouver municipal open datasets.",
+        highlights: [
+          "Executed spatial joins integrating Vancouver Open Data crime records with OpenStreetMap road networks using GeoPandas.",
+          "Ingested and parsed TransLink GTFS transit feeds to calculate accurate multi-modal connection nodes.",
+          "Formulated a composite routing cost function using Min-Max scaling to dynamically balance travel distance against incident density.",
+          "Queried weighted graph networks via customized Dijkstra algorithms and visualized paths using interactive Folium layers."
+        ],
+        stack: "Python, GeoPandas, Shapely, NetworkX, OSMnx, Folium"
+      },
+      websocket: {
+        tag: "Network Protocols",
+        title: "Custom WebSocket Protocol Implementation",
+        github: "https://github.com/woojinlim530/Websocket_Design",
+        desc: "An RFC 6455 compliant WebSocket protocol server implemented directly over raw TCP sockets to handle bidirectional full-duplex communication without high-level library overhead.",
+        highlights: [
+          "Processed HTTP connection upgrading via SHA-1 hashing and Base64 encoding of Sec-WebSocket-Key to generate the valid handshake response.",
+          "Parsed binary frame layouts: decoded FIN flags, opcode definitions, payload masks, and multi-byte extended lengths.",
+          "Implemented byte-level payload unmasking applying rotating 4-byte XOR bitwise operations.",
+          "Managed protocol-level control frames including heartbeat Ping/Pong packets and graceful TCP connection closures."
+        ],
+        stack: "Python/C++, Raw TCP Sockets, Bitwise Operations, RFC 6455 Protocol"
+      },
+      delivery: {
+        tag: "Database & Backend Systems",
+        title: "354 Delivery Platform & Relational DB",
+        github: "https://github.com/woojinlim530/354DeliveryApp",
+        desc: "An enterprise delivery logistics platform emphasizing database normalization, relational integrity, and robust transaction management.",
+        highlights: [
+          "Designed a 3NF normalized schema handling customers, couriers, restaurants, line items, and real-time status transitions.",
+          "Enforced foreign key constraints, cascading behaviors, and multi-column indexes to ensure sub-millisecond query responses.",
+          "Engineered RESTful API endpoints orchestrating lifecycle states from placement to dispatch.",
+          "Validated transaction isolation levels to prevent race conditions during concurrent order acceptance."
+        ],
+        stack: "SQL (MySQL), Node.js, Express, JavaScript, Database Schema Design"
+      }
+    };
+
+    function openModal(id) {
+      const data = projectData[id];
+      if (!data) return;
+
+      document.getElementById('modal-tag').innerText = data.tag;
+      document.getElementById('modal-title').innerText = data.title;
+      document.getElementById('modal-desc').innerText = data.desc;
+      document.getElementById('modal-stack').innerText = data.stack;
+      document.getElementById('modal-github').href = data.github;
+
+      const highlightsContainer = document.getElementById('modal-highlights');
+      highlightsContainer.innerHTML = '';
+      data.highlights.forEach(item => {
+        const li = document.createElement('li');
+        li.innerText = item;
+        highlightsContainer.appendChild(li);
+      });
+
+      document.getElementById('project-modal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('project-modal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    function closeModalOnBackdrop(e) {
+      if (e.target.id === 'project-modal') {
+        closeModal();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+
+</body>
+</html>
