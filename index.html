@@ -5,9 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Woojin Lim | Machine Learning Engineer & Data Analyst</title>
   
-  <meta name="description" content="Portfolio of Woojin Lim - Machine Learning Engineer & Data Analyst based in Greater Vancouver, BC." />
+  <meta name="description" content="Portfolio of Woojin Lim - Machine Learning Engineer & Data Analyst based in Greater Vancouver, BC. Specializing in large-scale data processing, LLM architectures, and systems-level optimization." />
   <meta name="author" content="Woojin Lim" />
   <link rel="canonical" href="https://woojinlim530.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://woojinlim530.github.io/" />
+  <meta property="og:title" content="Woojin Lim | Machine Learning Engineer & Data Analyst" />
+  <meta property="og:description" content="Cognitive Science & Computer Science at SFU. Large-scale data pipelines, LLM architectures, and hardware-accelerated algorithms." />
+  <meta property="og:site_name" content="Woojin Lim Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Woojin Lim | Machine Learning Engineer & Data Analyst" />
+  <meta name="twitter:description" content="ML systems, large-scale data pipelines, and systems-level performance optimization." />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -63,7 +75,7 @@
         Machine Learning Engineer & Data Analyst
       </h2>
       <p class="text-slate-400 max-w-xl leading-relaxed pt-2">
-        Cognitive Science & Computer Science at Simon Fraser University. Engineering end-to-end machine learning workflows, large-scale geospatial analytics, and hardware-accelerated algorithms.
+        Cognitive Science & Computer Science at Simon Fraser University. Engineering large-scale data pipelines, foundational LLM architectures, and hardware-accelerated systems with a zero-black-box approach.
       </p>
       <div class="pt-4 flex flex-wrap gap-4">
         <a href="#projects" class="px-5 py-2.5 rounded-lg bg-brand text-slate-900 font-semibold hover:bg-sky-400 transition">View Projects</a>
@@ -76,7 +88,7 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section (Option 1) -->
     <section id="about" class="space-y-6">
       <div class="flex items-center gap-4">
         <h3 class="text-xl font-bold text-white">About Me</h3>
@@ -84,10 +96,13 @@
       </div>
       <div class="text-slate-300 space-y-4 leading-relaxed">
         <p>
-          I operate across <strong>Machine Learning Engineering</strong> and <strong>Data Analytics</strong>, bridging formal computational theory with practical, high-throughput systems. My work primarily leverages <strong>Python</strong>, <strong>C++</strong>, and <strong>SQL</strong>.
+          I operate at the convergence of <strong>Machine Learning Engineering</strong> and <strong>Large-Scale Data Analytics</strong>. My academic foundation in <strong>Cognitive Science and Computing Science at SFU</strong> bridges psychology, formal linguistics, and philosophy with low-level systems programming. Rather than relying on surface-level intuitions, this interdisciplinary background allows me to analyze complex high-dimensional problems through multiple theoretical lenses and formulate novel, robust solutions.
         </p>
         <p>
-          With an interdisciplinary background spanning natural and formal computational models, I specialize in training Transformer architectures, extracting actionable insights from multi-modal spatial networks, and exploiting CPU cache lines and SIMD registers to maximize computational efficiency.
+          My engineering philosophy centers on <strong>complete transparency and control over internal mechanics</strong>. I avoid treating modern frameworks as black boxes; instead, I build from first principles—whether reproducing GPT-2 attention pipelines from scratch in PyTorch, accelerating graph traversals via C++ SIMD intrinsics and cache-conscious designs, or engineering high-throughput spatial data processing pipelines.
+        </p>
+        <p>
+          Currently, my priorities center on <strong>distributed data processing, foundational language model architectures, and data-driven modeling</strong>. I bring together the rigorous discipline of low-level hardware performance and the creative, macro-level thinking required to scale modern intelligent systems.
         </p>
       </div>
     </section>
@@ -105,7 +120,7 @@
         </div>
         <p class="text-brand font-medium text-sm">Bachelor of Arts (BA) in Cognitive Science · Minor in Computing Science</p>
         <p class="text-sm text-slate-400 leading-relaxed pt-1">
-          Relevant Coursework: Computational Linguistics, Data Structures & Algorithms, Operating Systems, Database Systems, Statistical Data Modeling, and Formal Language Theory.
+          Interdisciplinary studies spanning Computational Linguistics, Data Structures & Algorithms, Operating Systems, Database Systems, Statistical Data Modeling, and Philosophy of Mind.
         </p>
       </div>
     </section>
@@ -119,15 +134,15 @@
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
           <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Languages</h4>
-          <p class="text-sm text-slate-300">Python, C++, SQL (PostgreSQL, MySQL), Bash</p>
+          <p class="text-sm text-slate-300">Python, C++, SQL (PostgreSQL, MySQL), TypeScript, JavaScript, Bash</p>
         </div>
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
-          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">ML & Analytics</h4>
-          <p class="text-sm text-slate-300">PyTorch, Transformers, Scikit-learn, Pandas, NumPy, GeoPandas, PySpark</p>
+          <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Data & ML</h4>
+          <p class="text-sm text-slate-300">PySpark, PyTorch, Transformers, Pandas, NumPy, Scikit-learn, GeoPandas</p>
         </div>
         <div class="p-5 rounded-xl bg-card border border-border space-y-2">
           <h4 class="font-semibold text-brand text-sm tracking-wide uppercase">Systems & Tools</h4>
-          <p class="text-sm text-slate-300">SIMD Vectorization, Network Sockets, WebSockets, Node.js, Git, Linux</p>
+          <p class="text-sm text-slate-300">SIMD Intrinsics, Network Sockets, WebSockets, Node.js, Linux, Git</p>
         </div>
       </div>
     </section>
@@ -170,7 +185,7 @@
             </div>
             <h4 class="text-lg font-bold text-white mb-2 group-hover:text-brand transition">DFS & BFS: SIMD vs Non-SIMD Benchmark</h4>
             <p class="text-sm text-slate-300 leading-relaxed mb-4">
-              Performance analysis and algorithmic benchmarking of graph search algorithms in C++. Evaluates data-level parallelism via vector intrinsics against scalar execution.
+              Empirical profiling of BFS memory locality and branch predictability in C++. Achieved a 2x to 23x speedup using Agner Fog's Vector Class Library over standard containers.
             </p>
           </div>
           <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-400">
@@ -307,22 +322,22 @@
           "Constructed causal self-attention mechanisms with triangular lower-bound masking to guarantee strict autoregressive token visibility.",
           "Implemented learned 1D positional embeddings, Pre-LayerNorm residual blocks, and gaussian error linear unit (GELU) activations.",
           "Engineered text generation loops incorporating temperature modulation, top-k sampling, and top-p (nucleus) thresholding.",
-          "Built a vectorized training loop computing shifted cross-entropy loss against next-token target targets."
+          "Built a vectorized training loop computing shifted cross-entropy loss against next-token target sequences."
         ],
         stack: "Python, PyTorch, Hugging Face Tokenizers, NumPy"
       },
       simd: {
         tag: "High-Performance Computing",
-        title: "DFS & BFS: SIMD vs Non-SIMD Benchmark",
+        title: "Memory Locality & Branch Predictability in BFS",
         github: "https://github.com/woojinlim530/DFS-BFS_SIMDvsNON",
-        desc: "An empirical benchmarking suite evaluating data-level parallelism via SIMD vector intrinsics against scalar execution for Depth-First and Breadth-First graph search routines in C++.",
+        desc: "An empirical benchmarking suite evaluating container overhead, memory locality, and SIMD vectorization across graph traversal algorithms in C++.",
         highlights: [
-          "Leveraged vector intrinsics to unpack adjacency lists and evaluate visited-node bitmasks simultaneously across 128/256-bit registers.",
-          "Mitigated branch mispredictions and evaluated L1/L2 cache locality across dense and sparse graph benchmarks.",
-          "Demonstrated measurable throughput gains and memory bandwidth saturation over standard container-based traversal.",
-          "Profiled hardware execution counters, instruction pipelines, and cache misses across synthetic graph datasets."
+          "Achieved a 2x to 23x speedup across graphs up to 100,000 nodes using Agner Fog's Vector Class Library.",
+          "Identified working-set cache eviction thresholds at N ≈ 300 nodes using Linux perf counters.",
+          "Isolated branch predictability impacts, demonstrating a ~2.9x increase in branch misses on stochastic graphs.",
+          "Benchmarked container allocation dynamics across std::deque, std::queue, and custom linked lists."
         ],
-        stack: "C++, SIMD Intrinsics, Google Benchmark, Valgrind/Cachegrind, Linux"
+        stack: "C++, Agner Fog Vector Class Library, Linux perf, Benchmarking"
       },
       safepath: {
         tag: "Spatial Analytics / Routing",
